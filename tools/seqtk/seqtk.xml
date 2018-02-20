@@ -1,0 +1,34 @@
+<tool id="seqtk" name="seqtk" version="0.1.0">
+    <requirements>
+      <requirement type="package" version="1.2">seqtk</requirement>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+        seqtk seq -a '$input1' > '$output1'
+    ]]></command>
+    <inputs>
+      <param type="data" name="input1" format="fastq" />
+    </inputs>
+    <outputs>
+      <data name="output1" format="fasta" />
+    </outputs>
+    <tests>
+        <test>
+            <param name="input1" value="2.fastq"/>
+            <output name="output1" file="2.fasta"/>
+        </test>
+    </tests>
+    <help><![CDATA[
+        Usage:   seqtk seq [options] <in.fq>|<in.fa>
+    ]]></help>
+    <citations>
+        <citation type="bibtex">
+@misc{githubseqtk,
+  author = {LastTODO, FirstTODO},
+  year = {TODO},
+  title = {seqtk},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  url = {https://github.com/lh3/seqtk},
+}</citation>
+    </citations>
+</tool>
