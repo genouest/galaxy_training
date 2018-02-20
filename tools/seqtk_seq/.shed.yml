@@ -1,0 +1,5 @@
+categories: [Fasta Manipulation]
+description: mon premier seqtk dans galaxy en passant par planemo pour poser le tout
+  dans un toolshed
+name: seqtk_seq
+owner: genouest
